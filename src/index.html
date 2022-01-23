@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
+        <!-- <meta
+            http-equiv="Content-Security-Policy"
+            content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'"
+        /> -->
+        <link href="./styles.css" rel="stylesheet" />
+        <title>Sidechain bootstrap</title>
+    </head>
+    <body>
+        <h1>Sidechain paramters</h1>
+        <form id="scForm">
+            <label for="keySeed">Key seed:</label>
+            <input type="text" id="keySeed" name="keySeed" value="my-seed"/><br /><br />
+
+            <label for="vfrKeySeed">Vrf key seed:</label>
+            <input type="text" id="vfrKeySeed" name="vfrKeySeed" value="my-seed"/><br /><br />
+
+            <label for="maxPks">Max pks:</label>
+            <input type="text" id="maxPks" name="maxPks" value="7"/><br /><br />
+
+            <label for="threshold">Threshold:</label>
+            <input type="text" id="threshold" name="threshold" value="5"/><br /><br />
+
+            <label for="provingKeyPath">Proving key path:</label>
+            <input type="text" id="provingKeyPath" name="provingKeyPath" value="/tmp/sidechainapp/snark_proving_key"/><br /><br />
+
+            <label for="verificationKeyPath">Verification key path:</label>
+            <input type="text" id="verificationKeyPath" name="verificationKeyPath" value="/tmp/sidechainapp/snark_verification_key"/><br /><br />
+
+
+            <label for="withdrawalEpochLength">Withdrawal epoch length:</label>
+            <input type="text" id="withdrawalEpochLength" name="withdrawalEpochLength" value="1000"/><br /><br />
+
+            <label for="amount">Amount:</label>
+            <input type="text" id="amount" name="amount" value="1.00"/><br /><br />
+
+            <label for="walletSeed">Wallt seed:</label>
+            <input type="text" id="walletSeed" name="walletSeed" value="seed1"/><br /><br />
+
+            <input type="submit" value="Submit" />
+        </form>
+
+        <script src="./request/requests.js"></script>
+    </body>
+</html>
