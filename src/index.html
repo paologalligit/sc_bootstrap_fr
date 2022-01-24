@@ -14,32 +14,135 @@
         <h1>Sidechain paramters</h1>
         <form id="scForm">
             <label for="keySeed">Key seed:</label>
-            <input type="text" id="keySeed" name="keySeed" value="my-seed"/><br /><br />
+            <input
+                type="text"
+                id="keySeed"
+                name="keySeed"
+                value="my-seed"
+            /><br /><br />
 
             <label for="vfrKeySeed">Vrf key seed:</label>
-            <input type="text" id="vfrKeySeed" name="vfrKeySeed" value="my-seed"/><br /><br />
+            <input
+                type="text"
+                id="vfrKeySeed"
+                name="vfrKeySeed"
+                value="my-seed"
+            /><br /><br />
 
             <label for="maxPks">Max pks:</label>
-            <input type="text" id="maxPks" name="maxPks" value="7"/><br /><br />
+            <input
+                type="text"
+                id="maxPks"
+                name="maxPks"
+                value="7"
+            /><br /><br />
 
             <label for="threshold">Threshold:</label>
-            <input type="text" id="threshold" name="threshold" value="5"/><br /><br />
+            <input
+                type="text"
+                id="threshold"
+                name="threshold"
+                value="5"
+            /><br /><br />
 
             <label for="provingKeyPath">Proving key path:</label>
-            <input type="text" id="provingKeyPath" name="provingKeyPath" value="/tmp/sidechainapp/snark_proving_key"/><br /><br />
+            <input
+                type="text"
+                id="provingKeyPath"
+                name="provingKeyPath"
+                value="/tmp/sidechainapp/snark_proving_key"
+            /><br /><br />
 
             <label for="verificationKeyPath">Verification key path:</label>
-            <input type="text" id="verificationKeyPath" name="verificationKeyPath" value="/tmp/sidechainapp/snark_verification_key"/><br /><br />
-
+            <input
+                type="text"
+                id="verificationKeyPath"
+                name="verificationKeyPath"
+                value="/tmp/sidechainapp/snark_verification_key"
+            /><br /><br />
 
             <label for="withdrawalEpochLength">Withdrawal epoch length:</label>
-            <input type="text" id="withdrawalEpochLength" name="withdrawalEpochLength" value="1000"/><br /><br />
+            <input
+                type="text"
+                id="withdrawalEpochLength"
+                name="withdrawalEpochLength"
+                value="1000"
+            /><br /><br />
 
             <label for="amount">Amount:</label>
-            <input type="text" id="amount" name="amount" value="1.00"/><br /><br />
+            <input
+                type="text"
+                id="amount"
+                name="amount"
+                value="1.00"
+            /><br /><br />
 
             <label for="walletSeed">Wallt seed:</label>
-            <input type="text" id="walletSeed" name="walletSeed" value="seed1"/><br /><br />
+            <input
+                type="text"
+                id="walletSeed"
+                name="walletSeed"
+                value="seed1"
+            /><br /><br />
+
+            <label for="blocksBefore">
+                Blocks to generate before sidechain creation:
+            </label>
+            <input
+                type="text"
+                id="blocksBefore"
+                name="blocksBefore"
+                value="420"
+            /><br /><br />
+
+            <div>
+                <input
+                    type="checkbox"
+                    id="submitter"
+                    name="submitter"
+                />
+                <label for="submitter">Submitter enabled</label>
+            </div>
+
+            <div>
+                <input
+                    type="checkbox"
+                    id="certificateSigning"
+                    name="certificateSigning"
+                />
+                <label for="certificateSigning">
+                    Certificate signing enabled
+                </label>
+            </div>
+
+            <div>
+                <input
+                    type="checkbox"
+                    id="automaticForging"
+                    name="automaticForging"
+                />
+                <label for="automaticForging">Automatic forging</label>
+            </div>
+
+            <label for="outputFilePath">
+                Blocks to generate before sidechain creation:
+            </label>
+            <input
+                type="text"
+                id="outputFilePath"
+                name="outputFilePath"
+                value="/tmp/test.conf"
+            /><br /><br />
+
+            <div>
+                <input
+                    type="checkbox"
+                    id="startZendCheck"
+                    name="startZendCheck"
+                    checked
+                />
+                <label for="startZendCheck">Start Zend:</label>
+            </div>
 
             <input type="submit" value="Submit" />
         </form>
